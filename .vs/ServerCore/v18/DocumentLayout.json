@@ -5,6 +5,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{07BE344B-47A0-48DA-8F7E-CB023E0DB74D}|TransactionalServerCore\\TransactionalServerCore.csproj|c:\\users\\uriel\\documents\\github\\servidortransaccionalrepo\\transactionalservercore\\changelog.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{07BE344B-47A0-48DA-8F7E-CB023E0DB74D}|TransactionalServerCore\\TransactionalServerCore.csproj|solutionrelative:transactionalservercore\\changelog.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{07BE344B-47A0-48DA-8F7E-CB023E0DB74D}|TransactionalServerCore\\TransactionalServerCore.csproj|c:\\users\\uriel\\documents\\github\\servidortransaccionalrepo\\transactionalservercore\\transactionalserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{07BE344B-47A0-48DA-8F7E-CB023E0DB74D}|TransactionalServerCore\\TransactionalServerCore.csproj|solutionrelative:transactionalservercore\\transactionalserver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 14,
+          "SelectedChildIndex": 13,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,19 +30,11 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Bookmark",
               "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
               "$type": "Bookmark",
@@ -66,11 +62,24 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:131:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+              "Name": "ST:2:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TransactionalServer.cs",
+              "DocumentMoniker": "C:\\Users\\uriel\\Documents\\GitHub\\ServidorTransaccionalRepo\\TransactionalServerCore\\TransactionalServer.cs",
+              "RelativeDocumentMoniker": "TransactionalServerCore\\TransactionalServer.cs",
+              "ToolTip": "C:\\Users\\uriel\\Documents\\GitHub\\ServidorTransaccionalRepo\\TransactionalServerCore\\TransactionalServer.cs",
+              "RelativeToolTip": "TransactionalServerCore\\TransactionalServer.cs",
+              "ViewState": "AgIAAAIKAAAAAAAAAAApwA8KAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-14T17:19:35.725Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -80,7 +89,7 @@
               "RelativeDocumentMoniker": "TransactionalServerCore\\ChangeLog.txt",
               "ToolTip": "C:\\Users\\uriel\\Documents\\GitHub\\ServidorTransaccionalRepo\\TransactionalServerCore\\ChangeLog.txt",
               "RelativeToolTip": "TransactionalServerCore\\ChangeLog.txt",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
               "WhenOpened": "2026-04-08T16:37:54.856Z",
               "EditorCaption": ""

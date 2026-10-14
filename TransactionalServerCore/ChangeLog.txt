@@ -1,2 +1,3 @@
 ﻿//Autor     Fecha       Versión     Descripción
 //@UMB      02/06/21    14.0.0.0     Se actualiza a la versión net core 10
+//@UMB      14/10/26	14.1.0.0	Se realiza un ajuste en la obtención de los bytes, en lugar de utilizar encoding.default o ascii se usará latin1 por la compatibilidad con net core

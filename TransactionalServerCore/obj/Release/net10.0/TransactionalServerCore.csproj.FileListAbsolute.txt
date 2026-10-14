@@ -11,3 +11,4 @@ C:\Users\uriel\Documents\GitHub\ServidorTransaccionalRepo\TransactionalServerCor
 C:\Users\uriel\Documents\GitHub\ServidorTransaccionalRepo\TransactionalServerCore\obj\Release\net10.0\refint\TransactionalServerCore.dll
 C:\Users\uriel\Documents\GitHub\ServidorTransaccionalRepo\TransactionalServerCore\obj\Release\net10.0\TransactionalServerCore.pdb
 C:\Users\uriel\Documents\GitHub\ServidorTransaccionalRepo\TransactionalServerCore\obj\Release\net10.0\ref\TransactionalServerCore.dll
+C:\Users\uriel\Documents\GitHub\ServidorTransaccionalRepo\TransactionalServerCore\obj\Release\net10.0\Transact.8969B89D.Up2Date

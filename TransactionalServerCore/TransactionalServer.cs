@@ -501,11 +501,11 @@ namespace TransactionalServerCore
             TransactionalServerCore.ServerConfiguration.providerTimeout = providerTimeout;
             SetPerformanceCounters();
 
-            if (!ValidateParametersServer())
-            {
-                Log(NOTPERMISSION, LogType.Error);
-                Environment.Exit(666);
-            }
+            //if (!ValidateParametersServer())
+            //{
+            //    Log(NOTPERMISSION, LogType.Error);
+            //    Environment.Exit(666);
+            //}
 
             //Se prepara un buffer suficientemente grande para todas las operaciones y poder reutilizarlo por secciones
             bufferManager.InitializeFullBuffer();
@@ -1331,7 +1331,7 @@ namespace TransactionalServerCore
                 Int32 bytesTransferred = saeaDeEnvioRecepcion.BytesTransferred;
 
                 // se obtiene el mensaje y se decodifica para entenderlo
-                string message = Encoding.ASCII.GetString(saeaDeEnvioRecepcion.Buffer, saeaDeEnvioRecepcion.Offset, bytesTransferred);
+                string message = Encoding.Latin1.GetString(saeaDeEnvioRecepcion.Buffer, saeaDeEnvioRecepcion.Offset, bytesTransferred);
                 if ((message.Trim().Length > 4) && int.TryParse(message.Trim().Substring(0, 2), out int encabezado) == true)
                 {
                     var sb = new StringBuilder();
@@ -1532,7 +1532,7 @@ namespace TransactionalServerCore
             try
             {
                 // se obtiene la cantidad de bytes de la trama completa
-                bytesCounter = Encoding.ASCII.GetBytes(responseMessage, 0, responseMessage.Length, clientState.saeaOfSendReceive.Buffer, clientState.saeaOfSendReceive.Offset);
+                bytesCounter = Encoding.Latin1.GetBytes(responseMessage, 0, responseMessage.Length, clientState.saeaOfSendReceive.Buffer, clientState.saeaOfSendReceive.Offset);
                 // si el número de bytes es mayor al buffer que se tiene destinado a la recepción, no se puede proceder, no es válido el mensaje
                 if (bytesCounter > sizeBufferPerRequest)
                 {
@@ -2317,7 +2317,7 @@ namespace TransactionalServerCore
             var sb = new StringBuilder();
             try
             {
-                bytesCounter = Encoding.Default.GetBytes(messageToProvider, 0, messageToProvider.Length, providerState.saeaSendReceive.Buffer, providerState.saeaSendReceive.Offset);
+                bytesCounter = Encoding.Latin1.GetBytes(messageToProvider, 0, messageToProvider.Length, providerState.saeaSendReceive.Buffer, providerState.saeaSendReceive.Offset);
                 // si el número de bytes es mayor al buffer que se tiene destinado a la recepción, no se puede proceder, no es válido el mensaje
                 if (bytesCounter > sizeBufferPerRequest)
                 {
@@ -2574,7 +2574,7 @@ namespace TransactionalServerCore
                         throw new Exception("Buffer nulo en ReceiveProcess para el cliente: " + providerState.clientStateSource.UniqueClientId);
                     }
                     // se obtiene el mensaje y se decodifica
-                    string messageReceive = Encoding.ASCII.GetString(saeaReceive.Buffer, saeaReceive.Offset, bytesTransferred);
+                    string messageReceive = Encoding.Latin1.GetString(saeaReceive.Buffer, saeaReceive.Offset, bytesTransferred);
 
                     var sb = new StringBuilder();
                     sb.Append("Mensaje recibido del proveedor: ");
